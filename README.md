@@ -13,7 +13,6 @@ repository root to Pages on every push to `main`.
 | `index.html` | The whole site — markup, styles and the career chart script |
 | `assets/profile.jpg` | Hero headshot (800×800). Replace this file to change the photo. |
 | `assets/running.jpg` | Photo for the endurance section |
-| `assets/SandeepBazar-Resume.pdf` | General resume offered for download |
 | `.github/workflows/pages.yml` | Static deploy to GitHub Pages |
 
 ## Editing
@@ -23,8 +22,10 @@ near the bottom of `index.html`: `STEPS` (role changes, as `{year, level, label}
 `MARKS` (milestones). Edit those and both views stay in sync — there is no hand-drawn SVG
 path to maintain.
 
-**Resume.** Regenerate with `build_resumes.py` in the jobs project, then copy the *General*
-variant here. The company-tailored versions are deliberately kept out of this repository.
+**Resume.** Do not put one here. Every variant `build_resumes.py` produces carries a phone
+number, an email address and a full postal location in its header, and anything in this
+repository is publicly downloadable. Resumes stay in the jobs project under `Apply/`, which is
+not a git repository. Recruiters are pointed at LinkedIn instead.
 
 ## Checks worth repeating after an edit
 
